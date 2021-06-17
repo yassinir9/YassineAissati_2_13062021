@@ -1,4 +1,27 @@
-p
-{
-    color: blue;
+
+/* POLICE DE CARACTERE */
+@import url(https://fonts.googleapis.com/css2?family=Raleway);
+
+
+/* NAVIGATEUR  */
+nav {
+    display: flex;
+    justify-content: space-between;
 }
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li {
+    margin: 10px; 
+    font-family: Raleway;
+}
+div.boutonFiltre{
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+section#filtre(
+
+)
