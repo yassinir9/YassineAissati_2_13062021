@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
          <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
 
@@ -9,6 +10,8 @@
     </head>
 
     <body>
+
+      <!--HEADER-->
        <header>
         <nav>
           <img src="./Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo">
@@ -19,23 +22,140 @@
            </ul> 
          </nav>
       </header>
-      <div>
-         <h1>Trouvez votre hebergement pour des vacances de reve</h1>
-         <p>En plein centre ville ou en pleine nature</p>
-         <section id="recherche">
-               <i class="fas fa-map-marker-alt"></i>
-               <input type="text" id="ville" placeholder="Marseille, France">
-               <button>Rechercher</button>
-         </section>
+      <!--HEADER-->
 
-         <section id="filtre">
-            <p>Filtres</p>
-            <ul>
-               <div class="boutonFiltre"><i class="fas fa-money-bill-wave-alt"></i><li>Economique</li></div>
-               <div class="boutonFiltre"><i class="fas fa-child"></i><li>Familial</li></div>
-               <li>Romantique</li>
-               <li>Animaux autorisés</li>
-            </ul>
+      <!--Main-->
+      <main class="main">
+       <!--SEARCH-->  
+       <section class="serch"
+         <header class="searchHeader">
+          <h1 class="searhHeaderTitle">Trouvez votre hebergement pour des vacances de reve</h1>
+         <p>En plein centre ville ou en pleine nature</p>
+         </header>
+         <form class="searchForm" action="proceedFrom.html" method="GET">
+            <span class="searchFormWrapicon">
+              <i class="fas fa-map-marker-alt searchFormWrapiconIcon"></i>
+            </span>
+            <input class="searchFormSearchinput" type="search" placeholder="Marseille, France" size="1">
+            <button class="searchFormSubmitinput">
+              <span class="searchFormSubmitinputText">Rechercher</span>
+              <i class="searchFormSubmitinputIcon fas fa-search"></i>
+            </button>
+          </form>
+          <div class="searchFilters">
+            <h2 class="searchFiltersTitle">Filtres</h2>
+            <div class="searchFiltersFilter">
+              <div class="searchFiltersFilterWrapicon">
+                <i class="fas fa-money-bill-wave searchFiltersFilterWrapiconIcon"></i>
+              </div>  
+              <span class="searchFiltersFilterTitle">Économique</span>
+            </div>
+            <div class="searchFiltersFilter">
+              <div class="searchFiltersFilterWrapicon">
+                <i class="fas fa-child searchFiltersFilterWrapiconIcon"></i>
+              </div> 
+              <span class="searchFiltersFilterTitle">Familial</span>
+              </div>
+           <div class="searchFiltersFilter">
+           <div class="searchFiltersFilterWrapicon">
+            <i class="fas fa-heart searchFiltersFilterWrapiconIcon"></i>
+          </div>
+          <span class="searchFiltersFilterTitle">Romantique</span>
+         </div>
+         <div class="searchFiltersFilter">
+            <div class="searchFiltersFilterWrapicon">
+              <i class="fas fa-dog searchFiltersFilterWrapiconIcon"></i>
+            </div>
+            <span class="searchFiltersFilterTitle">Animaux autorisés</span>
+          </div>
+          <div class="searchResult">
+           <div class="searchResultwrapricon"><i class="fas fa-info searchResultwrapiconIcon"></i></div>
+           <p class="SearchResultText">Plus de 5OO logemets sont disponible dans cette ville</p>
+           </div>
+
+           <!--SEARCH-->
+           
+           <!--Lodging-->
+          <section class="lodging" id="lodging">
+            <div class="lodgingMain">
+            <header class="lodgingMainHeader">
+              <h2 class="lodgingMainHeaderTitle">Hébergement a Marseille</h2>
+               </header>
+                 <article class="lodgingMainCard">
+                   <figure class="lodgingMainCardFigure">
+                     <img class="lodgingMainCardFigureImg"
+                      src="./Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec un lit superposé qui donne sur la rue.">
+                      <figcaption class="lodgingMainCardFigureCaption">
+                        <h3 class="lodgingMainCardFigureCaptionTitle">Auberge a la Cannebiere</h3>
+                      </figcaption> 
+                   </figure>  
+                   <p class="lodgingMainCardDesk">Nuit a parti de <strong class="lodgingMainCardPrice">25€</strong></p>
+                   <div class="lodgingMainCardGuard">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                 </article> 
+                 <article class="lodgingMainCard">
+                   <figure class="lodgingMainCardFigure">
+                     <img class="lodgingMainCardFigureImg"
+                     src="./Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre avec lit qui donne sur la rue">
+                     <figcaption class="lodgingMainCardFigureCaption">
+                       <h3 class="lodgingMainCardFigureCaptionTitle">Hotel du port</h3>
+                     </figcaption>
+                   </figure>  
+                   <p class="lodgingMainCardDesk">Nuit a partir de <strong class="lodgingMainCardPrice">52€</strong></p>
+                   <div class="lodgingMainCardGuard">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                   </div>
+                     </article>
+                     <article class="lodgingMainCard">
+                       <figure class="lodgingMainCardFigure">
+                         <img class="lodgingMainCardFigureImg"
+                         src="./Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre avec un lit">
+                         <figcaption class="lodgingMainCardFigureCaption">
+                          <h3 class="lodgingMainCardFigureCaptionTitle">Hotel les mouettes</h3>
+                        </figcaption>
+                       </figure>
+                       <p class="lodgingMainCardDesk">Nuit a partir de<strong class="lodgingMainCardPrice">76€</strong></p>
+                       <div class="lodgingMainCardGuard">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                       </div>
+                     </article>
+                       <article class="lodgingMainCard">
+                         <figure class="lodgingMainCardFigure">
+                           <img class="lodgingMainCardFigureImg"
+                           src="./Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre double lit">
+                           <figcaption class="lodgingMainCardFigureCaption">
+                             <h3 class="lodgingMaincardFigureCaptionTitle">Hotel de la mer</h3>
+                           </figcaption>
+                         </figure>
+                         <p class="lodgingMainCardDesk">Nuit a partir de<strong class="lodgingMaincardPrice">46€</strong></p>
+                         <div class="lodgingMainCardGuard">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <i class="far fa-star"></i>
+
+                         </div>
+                       </article>
+                    
+             </div>
+           </section>
+       
+              
+            
          </section>
         
       </div>
