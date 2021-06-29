@@ -12,22 +12,21 @@
     <body>
 
       <!--HEADER-->
-       <header>
-        <nav>
-          <img src="./Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo">
-           <ul>
-            <li>Hebergements</li>
-            <li>Activités</li>
-            <li>S'inscrire</li>
-           </ul> 
+       <header class="header">
+        <img class="headerImg" 
+         src="./Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo">
+         <nav class="headernav">
+           <a class="headerNavlink" href="#lodging" data-active=>Hebergements</a>
+           <a class="headerNavLink" href="#activity" data-active=>Activités</a>
          </nav>
+           <a class="headersignup" href="#">S'inscrire</a>
       </header>
       <!--HEADER-->
 
       <!--Main-->
       <main class="main">
        <!--SEARCH-->  
-       <section class="serch"
+       <section class="serch">
          <header class="searchHeader">
           <h1 class="searhHeaderTitle">Trouvez votre hebergement pour des vacances de reve</h1>
          <p>En plein centre ville ou en pleine nature</p>
@@ -75,7 +74,7 @@
 
            <!--SEARCH-->
            
-           <!--Lodging-->
+           <!--LODGING-->
           <section class="lodging" id="lodging">
             <div class="lodgingMain">
             <header class="lodgingMainHeader">
@@ -123,7 +122,7 @@
                           <h3 class="lodgingMainCardFigureCaptionTitle">Hotel les mouettes</h3>
                         </figcaption>
                        </figure>
-                       <p class="lodgingMainCardDesk">Nuit a partir de<strong class="lodgingMainCardPrice">76€</strong></p>
+                       <p class="lodgingMainCardDesk">Nuit a partir de <strong class="lodgingMainCardPrice">76€</strong></p>
                        <div class="lodgingMainCardGuard">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -140,19 +139,128 @@
                              <h3 class="lodgingMaincardFigureCaptionTitle">Hotel de la mer</h3>
                            </figcaption>
                          </figure>
-                         <p class="lodgingMainCardDesk">Nuit a partir de<strong class="lodgingMaincardPrice">46€</strong></p>
+                         <p class="lodgingMainCardDesk">Nuit a partir de <strong class="lodgingMaincardPrice">46€</strong></p>
                          <div class="lodgingMainCardGuard">
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
                           <i class="far fa-star"></i>
                           <i class="far fa-star"></i>
-
+                        </div>
+                       </article>
+                       <article class="lodgingMainCard">
+                         <figure class="lodgingMainCardFigure">
+                           <img class="lodgingMainCardFigureImg"
+                           src="./Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre lit superposé">
+                           <figcaption class="lodgingMainCardGuard">
+                             <h3 class="lodgingMainCardFigureCaptionTitle">Auberge le Panier</h3>
+                           </figcaption>
+                         </figure>
+                         <p class="lodgingMainCardDesk">Nuit a partir de <strong class="lodgingMainCardPrice">23€</strong></p>
+                         <div class="lodgingMainCard">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
                          </div>
                        </article>
-                    
-             </div>
+                      <article class="lodgingMainCard">
+                       <figure class="lodgingMainCardFigure">
+                        <img class="lodgingMainCardFigureImg"
+                        src="./Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"  alt="chambre avec lit">
+                        <figcaption class="lodgingMainCard">
+                          <h3 class="lodgingMainCardGuardFigureCaptionTitle">Hotel chez Amina</h3>
+                        </figcaption>
+                       </figure> 
+                       <p class="lodgingMainCardDesk">Nuit a partir de <strong class="lodgingMainCardPrice">96€</strong></p>
+                       <div class="lodgingMainCard">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                       </div>
+                      </article>
+                     </a>
+                    </article>
+                   <a class="lodgingViewMore" href="#">Afficher plus</a>  
+                </div>
+
+
+                   <aside class="lodgingMostPopular">
+                    <h2 class="lodgingMostPopularTitle">Les plus populaires <i class="fas fa-chart-line"></i></h2>
+                    <article class="lodgingPopularCard">
+                      <a class="lodgingPopularWrapcontent" href="#">
+                        <div class="lodgingPopularwrapcententwrapimg">
+                          <img 
+                            class="lodgingPopularWrapcontentContentWrapImg"
+                            src="./Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="chambre avec lit et fenetre">
+
+                        </div>
+                        <div class="lodgingPopularWrapcontentContent">
+                          <h3 class="lodgingMainCardFigureCaptionTitle">Hôtel Le soleil du matin</h3>
+                          <p class="lodgingMainCardDesc">Nuit à partir de <strong class="lodgingMainCardDescPrice">128€</strong></p>
+                          <div class="lodgingPopularWrapcontentContentWhitespace"></div>
+                          <div class="lodgingMainCardGrade">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        </div> 
+                      </a>
+                    </article>
+                    <article class="lodgingPopularCard">
+                      <a class="lodgingPopularWrapcontent" href="#">
+                        <div class="lodgingPopularWrapcontentWrapimg">
+                          <img class="lodgingPopularWrapcontentWrapimgImg"
+                          src="./Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="chambre avec lit">
+                         </div>
+                         <div class="lodgingPopularWrapcontentContent">
+                          <h3 class="logingMainCardFigureCaptionTitle">Au coeur de l'eau Chambres d'hôtes</h3>
+                          <p class="lodgingMainCardDesc">Nuit à partir de <strong class="lodgingMainCardDescPrice">71€</strong></p>
+                          <div class="lodgingPopularWrapcontentContentWhitespace"></div>
+                          <div class="lodgingMainCardGrade"></div>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                         </div>
+                      </a>
+                     </article>
+                      <article class="lodgingPopularCard">
+                        <a class="lodgingPopularWrapcontent" href="#">
+                          <div class="lodgingPopularWrapcontentWrapimg">
+                            <img class="lodgingPopularWrapcontentWrapimgImg"
+                            src="./Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="chambre avec lit">
+
+                          </div>
+                          <div class="lodgingPopularWrapcontentContent">
+                            <h3 class="lodgingingMainCardFigureCaptionTitle">Hôtel Tout bleu et Blanc</h3>
+                            <p class="lodgingMainCardDesc">Nuit à partir de <strong class="lodgingMainCardDescPrice">68€</strong></p>
+                            <div class="lodgingPopularWrapcontentContentWhitespace"></div>
+                            <div class="lodgingMainCardGrade">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                         </div>
+                        </div>  
+                     </a>
+                      </article> 
+
+                   </aside>
+
            </section>
+        
+        <!--LODGING-->   
+
+
+        <!--ACTIVITY-->
        
               
             

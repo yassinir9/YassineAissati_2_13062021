@@ -1,17 +1,77 @@
 
 /* POLICE DE CARACTERE */
-@import url(https://fonts.googleapis.com/css2?family=Raleway);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+font-family: "Raleway", "Sans serif";
+margin: 0;
+}
 
-nav{
-    display: flex;
-    justify-content: space-between;
+.header {
+    display: grid;
     align-items: center;
-}
-nav ul{
+    max-width: 1440px;
+    margin: auto;
+  }
+ 
+  .headerNavLink:hover {
+    color: #0065FC;
+  }
+  .headerSignup {
     display: flex;
-    list-style: none;
-}
-nav li{
-    margin: 15px;
-}
+    align-items: center;
+    grid-area: button;
+    padding: 2rem;
+    color: #0065FC;
+    font-weight: 600;
+  }
+  .headerimg {
+    order: 0;
+  }
+  .headerSignup {
+    order: 1;
+  }
+  .headerNav {
+    order: 2;
+  }
+  .headerNavLink {
+    border-top: none;
+    border-bottom: 4px solid #F2F2F2;
+    width: 50%;
+  }
+  .headerNavLink[data-active=true] {
+    border-bottom-color: #0065FC;
+  }
+  .headerNavLink:hover {
+    border-bottom-color: #0065FC;
+  }
+  .searchFormWrapiconIcon {
+    margin-left: 0.1rem;
+  }
+  .searchFormSearchinput {
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid;
+    padding: 0 1.3rem;
+    box-sizing: border-box;
+    width: 12rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+  }
+  .searchFormSearchinput::placeholder {
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    color: #00000069;
+  }
+  .searchFormSubmitinput {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    }
+    .searchFilters {
+        display: flex;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+      }
