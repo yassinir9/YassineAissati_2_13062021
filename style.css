@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-header {
+.header {
   display: grid;
   align-items: center;
   max-width: 1440px;
@@ -24,6 +24,7 @@ header {
 }
 .headerNav {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   grid-area: navbar;
 }
@@ -258,5 +259,192 @@ header {
     column-gap: 2rem;
     row-gap: 2rem;
   }
+  .lodgingMainHeader {
+    grid-column: 1/-1;
+  }
+  .lodgingMainHeaderTitle {
+    margin: 0;
+  }
+  .lodgingMainCard {
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .lodgingMainCard:hover {
+    transform: scale(1.02);
+  }
+  .lodgingMainCardFigure {
+    margin: 0;
+  }
+  .lodgingMainCardFigureImg {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .lodgingMainCardFigureCaptionTitle {
+    margin: 0.25rem 0.75rem 0 0.75rem;
+  }
+  .lodgingMainCardDescPrice {
+    font-weight: bold;
+  }
+  .lodgingMainCardGrade {
+    margin: 0 0.75rem 0.25rem 0.75rem;
+  }
+  .lodgingMainCardGradeIcon[data-active=true] {
+    color: #0065FC;
+  }
+  .lodgingMainCardGradeIcon[data-active=false] {
+    color: #d9d9d9;
+  }
+  .lodgingMainViewmore {
+    font-weight: bold;
+  }
+  .lodgingPopular {
+    display: grid;
+    row-gap: 2rem;
+    align-items: start;
+    grid-template-rows: auto repeat(3, 1fr);
+  }
+  .lodgingPopularTitle {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lodgingPopularWrapcontent {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: auto;
+  }
+  .lodgingPopularWrapcontentWrapimg {
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+  .lodgingPopularWrapcontentWrapimgImg {
+    border-radius: 1rem 0 0 1rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .lodgingPopularWrapcontentContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .lodgingPopularWrapcontentContentWhitespace {
+    flex: 1;
+  }
+  .lodgingPopularhostingMainCard {
+    height: 8.75rem;
+  }
 
+  @media (max-width: 1440px) {
+    .lodging {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+    .lodgingPopular {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto 10rem;
+      column-gap: 2rem;
+      grid-row-start: 1;
+    }
+    .lodgingPopularTitle {
+      grid-column: 1/-1;
+    }
+  }
+  @media (min-width: 925px) {
+    .lodgingMain {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 925px) and (min-width: 650px) {
+    .lodgingMain {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 650px) {
+    .lodgingMain {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 1000px) {
+    .lodgingPopular {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto repeat(3, 9rem);
+    }
+  } 
 
+ .activity {
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
+}
+.activityTitle {
+  grid-column: 1/-1;
+}
+.activityCard {
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+.activityCard:hover {
+  transform: scale(1.01);
+}
+.activityCardWrapimg {
+  position: relative;
+  flex: 1;
+}
+.activityCardWrapimgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.activityCardTitle {
+  margin: 1.2rem 1.5rem;
+}
+@media (min-width: 1100px) {
+  .activity {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  }
+  .activityCard1 {
+    grid-row: 2/7;
+    grid-column: 1/2;
+  }
+  .activityCard2 {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+  .activityCard3 {
+    grid-column: 3/4;
+    grid-row: 2/7;
+  }
+  .activityCard4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+  .activityCard5 {
+    grid-column: 2/3;
+    grid-row: 6/7;
+  }
+  .activityCard6 {
+    grid-column: 4/5;
+    grid-row: 4/7;
+  }
+}
