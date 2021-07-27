@@ -1,7 +1,7 @@
 
 /* POLICE DE CARACTERE */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-
+body {
 font-family: "Raleway", "Sans serif";
 margin: 0;
 }
@@ -19,22 +19,21 @@ a {
 }
 .headerImg {
   grid-area: logo;
-  padding: 0 2rem;
-  height: 2.813rem;
+  padding: 0 1rem;
+  height: 2.815rem;
 }
 .headerNav {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  grid-area: navbar;
+  grid-area:navbar;
 }
 .headerNavLink {
-  padding: 2rem;
+  padding: 4rem;
   font-weight: 500;
-  text-align: center;
-  transition-duration: 0.1s;
-  border-top: 3px transparent solid;
-  border-bottom: 3px transparent solid;
+  text-align: right;
+  transition-duration: 0.3s;
+  border-top: 4px transparent solid;
+  border-bottom: 4px transparent solid;
 }
 .headerNavLink[data-active=true] {
   color: #0065FC;
@@ -79,7 +78,7 @@ a {
   }
   .headerNavLink {
     border-top: none;
-    border-bottom: 3px solid #F2F2F2;
+    border-bottom: 4px solid #F2F2F2;
     width: 50%;
   }
   .headerNavLink[data-active=true] {
@@ -123,7 +122,7 @@ a {
   border-bottom: #F2F2F2 1px solid;
   padding: 0 1.5rem;
   box-sizing: border-box;
-  width: 14rem;
+  width: 13rem;
   font-size: 1rem;
   font-weight: bold;
   font-family: "Raleway", "Sans serif";
@@ -252,7 +251,7 @@ a {
   .lodging {
     display: grid;
     column-gap: 2rem;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: 5fr 2fr;
   }
   .lodgingMain {
     display: grid;
@@ -447,4 +446,29 @@ a {
     grid-column: 4/5;
     grid-row: 4/7;
   }
+}
+@media (max-width: 1100px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 12rem 12rem;
+  }
+}
+@media (max-width: 925px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 12rem 12rem 12rem;
+  }
+}
+@media (max-width: 650px) {
+  .activity {
+    row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  }
+}
+.footer {
+  background-color: #F2F2F2;
+  width: 100%;
 }
