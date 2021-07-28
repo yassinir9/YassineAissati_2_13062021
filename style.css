@@ -75,6 +75,7 @@ a {
   }
   .headerNav {
     order: 2;
+    text-align: right;
   }
   .headerNavLink {
     border-top: none;
