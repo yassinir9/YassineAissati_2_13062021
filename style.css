@@ -31,16 +31,16 @@ a {
   padding: 4rem;
   font-weight: 500;
   text-align: right;
-  transition-duration: 0.3s;
-  border-top: 4px transparent solid;
-  border-bottom: 4px transparent solid;
+  transition-duration: 0.1s;
+  border-top: 3px transparent solid;
+  border-bottom: 3px transparent solid;
 }
 .headerNavLink[data-active=true] {
   color: #0065FC;
 }
 .headerNavLink:hover {
   color: #0065FC;
-}
+  }
 .headerSignup {
   display: flex;
   align-items: center;
