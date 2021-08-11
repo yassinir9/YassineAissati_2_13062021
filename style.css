@@ -348,7 +348,7 @@ a {
     height: 8.75rem;
   }
 
-  @media (max-width: 1440px) {
+  @media (max-width: 1200px) {
     .lodging {
       grid-template-columns: 1fr;
       row-gap: 2rem;
@@ -481,7 +481,7 @@ a {
   box-sizing: border-box;
 }
 .footerColumnwrapperColumn {
-  width: 35%;
+  width: 30%;
   padding: 2rem 2rem;
 }
 .footerColumnwrapperColumnLink {
