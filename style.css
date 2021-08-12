@@ -20,7 +20,7 @@ a {
 .headerImg {
   grid-area: logo;
   padding: 0 1rem;
-  height: 2.815rem;
+  height: 2.813rem;
 }
 .headerNav {
   display: flex;
@@ -28,10 +28,10 @@ a {
   grid-area:navbar;
 }
 .headerNavLink {
-  padding: 4rem;
+  padding: 2rem;
   font-weight: 500;
   text-align: right;
-  transition-duration: 0.1s;
+  transition-duration: 0s;
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
@@ -56,11 +56,11 @@ a {
     grid-template-areas: "logo . navbar button";
   }
   .headerNavLink[data-active=true] {
-    border-top: 3px solid #0065FC;
+     border-top: 3px solid #0065FC;
   }
   .headerNavLink:hover {
     border-top: 3px solid #0065FC;
-  }
+   }
 }
 @media screen and (max-width: 600px) {
   .header {
@@ -492,7 +492,7 @@ a {
   text-decoration: underline;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .footerColumnwrapper {
     flex-direction: column;
     padding: 2rem;
