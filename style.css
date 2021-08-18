@@ -36,7 +36,7 @@ a {
   border-bottom: 3px transparent solid;
 }
 .headerNavLink[data-active=true] {
-  color: #0065FC;
+ color: #0065FC;
 }
 .headerNavLink:hover {
   color: #0065FC;
@@ -492,7 +492,7 @@ a {
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 350px) {
   .footerColumnwrapper {
     flex-direction: column;
     padding: 2rem;
