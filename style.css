@@ -38,9 +38,6 @@ a {
 .headerNavLink[data-active=true] {
  color: #0065FC;
 }
-.headerNavLink:hover {
-  color: #0065FC;
-  }
 .headerSignup {
   display: flex;
   align-items: center;
@@ -56,12 +53,13 @@ a {
     grid-template-areas: "logo . navbar button";
   }
   .headerNavLink[data-active=true] {
-     border-top: 3px solid #0065FC;
+    border-top: #0065FC;
   }
   .headerNavLink:hover {
     border-top: 3px solid #0065FC;
-   }
-}
+     }
+   }  
+
 @media screen and (max-width: 600px) {
   .header {
     grid-template-columns: auto 1fr auto;
