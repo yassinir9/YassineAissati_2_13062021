@@ -286,6 +286,10 @@ a {
   }
   .lodgingMainCardFigureCaptionTitle {
     margin: 0.25rem 0.75rem 0 0.75rem;
+    font-size: 17px;
+  }
+  .lodgingMainCardDesc {
+    margin-left: 11px;
   }
   .lodgingMainCardDescPrice {
     font-weight: bold;
