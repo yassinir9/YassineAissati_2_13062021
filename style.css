@@ -238,18 +238,7 @@ a {
   }
   .searchFormSubmitinputIcon {
     display: none !important; 
-    height: 50px;
-    width: 50px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #0065fc;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: -10px;
-
-  }
-}
+   }
   .lodgingWrapper, .lodgingPopular, .lodgingMain {
     background-color: #F2F2F2;
     border-radius: 1.5rem;
