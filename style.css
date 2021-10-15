@@ -214,13 +214,14 @@ a {
   .searchForm {
     display: flex;
     width: 100%;
+    padding: 0 0.5rem;
   }
   .searchFormSearchinput {
     flex: 1;
   }
   .searchFormSubmitinputText {
-    display: none;
-  }
+    display: none !important;
+   }
   .searchFormSubmitinputIcon {
     display: block;
    }
@@ -237,12 +238,12 @@ a {
     display: block;
   }
   .searchFormSubmitinputIcon {
-    display: none !important; 
+    display: none; 
    }
   .lodgingWrapper, .lodgingPopular, .lodgingMain {
     background-color: #F2F2F2;
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding:2rem;
   }
   .lodging {
     display: grid;
