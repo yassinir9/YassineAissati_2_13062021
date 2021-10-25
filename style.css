@@ -239,11 +239,12 @@ a {
   .searchFormSubmitinputIcon {
     display: none; 
    }
-  .lodgingWrapper, .lodgingPopular, .lodgingMain {
+   .lodgingWrapper , .lodgingPopular , .lodgingMain {
     background-color: #F2F2F2;
+    border-radius: 1.5rem;
     padding:2rem;
-  }
-  .lodging {
+    }
+    .lodging {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 6fr 3fr;
@@ -375,13 +376,13 @@ a {
   @media (max-width: 650px) {
     .lodgingMain {
       grid-template-columns: 1fr;
+      background-color: white;
     }
   }
   @media (max-width: 1000px) {
     .lodgingPopular {
       grid-template-columns: 1fr;
       grid-template-rows: auto repeat(3, 9rem);
-      background-color: grey;
     }
   } 
 
