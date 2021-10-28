@@ -81,7 +81,7 @@ a {
   }
   .headerNavLink[data-active=true] {
     border-bottom-color: #0065FC;
-  }
+    }
   .headerNavLink:hover {
     border-bottom-color: #0065FC;
   }
