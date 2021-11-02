@@ -90,6 +90,7 @@ a {
   max-width: 1440px;
   margin: auto;
   box-sizing: border-box;
+  padding: 0 1.5rem;
 }
 
 .searchHeaderTitle {
