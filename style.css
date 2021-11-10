@@ -35,9 +35,6 @@ a {
   border-top: 3px transparent solid;
   border-bottom: 3px transparent solid;
 }
-.headerNavLink[data-active=true] {
- color: #0065FC;
-}
 .headerSignup {
   display: flex;
   align-items: center;
@@ -57,6 +54,7 @@ a {
   }
   .headerNavLink:hover {
     border-top: 3px solid #0065FC;
+    color: #0065FC;
      }
    }  
 
@@ -90,7 +88,7 @@ a {
   max-width: 1440px;
   margin: auto;
   box-sizing: border-box;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .searchHeaderTitle {
   margin-bottom: 0.5rem;
