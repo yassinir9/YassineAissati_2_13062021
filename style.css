@@ -90,6 +90,11 @@ a {
   box-sizing: border-box;
   padding: 0 1rem;
 }
+@media screen and (max-width: 600px) {
+  .main {
+  margin: auto;  
+  }
+
 .searchHeaderTitle {
   margin-bottom: 0.5rem;
 }
