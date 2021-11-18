@@ -89,11 +89,7 @@ a {
   margin: auto;
   box-sizing: border-box;
   padding: 0 1rem;
-}
-@media screen and (max-width: 600px) {
-  .main {
-  margin: auto;  
-  }
+ }
 
 .searchHeaderTitle {
   margin-bottom: 0.5rem;
@@ -212,6 +208,7 @@ a {
 .searchResultText {
   margin: 0;
 }
+
 @media screen and (max-width: 600px) {
   .searchForm {
     display: flex;
@@ -386,10 +383,9 @@ a {
     .lodgingPopular {
       grid-template-columns: 1fr;
       grid-template-rows: auto repeat(3, 9rem);
-    }
+      }
   } 
-
- .activity {
+.activity {
   display: grid;
   column-gap: 2rem;
   margin: 4rem 0;
