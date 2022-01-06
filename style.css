@@ -75,7 +75,7 @@ a {
   .headerNavLink {
     border-top: none;
     border-bottom: 4px solid #F2F2F2;
-    width: 50%;
+    width: 35%;
   }
   .headerNavLink[data-active=true] {
     border-bottom-color: #0065FC;
